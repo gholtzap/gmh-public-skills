@@ -2,6 +2,8 @@
 
 Follow the user's scope and the project's existing contracts and conventions. Read each applicable `SKILL.md` before using it, and load only references needed for the task.
 
+Recommended companion: install [Ponytail](https://github.com/DietrichGebert/ponytail) for its guidance on small, complete changes and code review. Follow its installation instructions; it is maintained separately and is not bundled here.
+
 | Task | Skill |
 | --- | --- |
 | Software design, implementation, refactoring, or review | [general-software-engineering](.agents/skills/general-software-engineering/SKILL.md) |
