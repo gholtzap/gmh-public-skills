@@ -1,0 +1,3 @@
+interface:
+  display_name: "Lintapple"
+  short_description: "Check web UI policy, states, and layout"

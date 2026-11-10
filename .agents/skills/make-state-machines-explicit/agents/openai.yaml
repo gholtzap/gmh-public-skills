@@ -1,0 +1,4 @@
+interface:
+  display_name: "Make state machines explicit"
+  short_description: "Find, convert with consent, and simplify state machines"
+  default_prompt: "Use $make-state-machines-explicit to inventory implicit workflows, obtain consent before conversion, and audit the resulting states for unnecessary complexity."

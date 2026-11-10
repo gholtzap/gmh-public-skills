@@ -1,0 +1,4 @@
+interface:
+  display_name: "PR visual evidence"
+  short_description: "Show PR changes with screenshots and videos"
+  default_prompt: "Use $pr-visual-evidence to show what this PR changes with screenshots or video."
