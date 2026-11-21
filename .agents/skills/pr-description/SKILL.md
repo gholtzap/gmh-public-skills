@@ -1,19 +1,38 @@
 ---
 name: pr-description
-description: Draft or revise a pull request body from the actual change and available evidence, in gmh's direct, user-first style. Use for PR descriptions, not title-only requests.
+description: Write or revise pull request titles and descriptions from the current task, actual changes, and available evidence, in gmh's direct, user-first style. Use for title-only, description-only, or combined PR-writing requests.
 ---
 
-# Write a PR description like gmh
+# Write PR titles and descriptions
 
 Explain the change to a reader who has not used this part of the product. The description must make sense without a separate explanation in chat.
 
-## Ground the description
+## Choose the requested output
 
-- Read the final diff and available PR context, user notes, tests, and captured results. Identify the problem or goal, the resulting behavior, and the cause or design decision when relevant.
+- For a title-only request, return exactly one title line without labels, bullets, or an explanation.
+- For a description-only request, return the PR body without adding a title.
+- When asked for both, or to draft PR text without specifying one part, return one title and one description, clearly separated.
+- Keep the title and description focused on the same final change.
+
+## Ground the change
+
+- For a title-only request, prefer the current user request, recent conversation, and changes already inspected. If the main change is clear, do not gather more context.
+- When that context is absent or too thin, confirm the current directory is the intended Git repo. Inspect `git status --short`, `git diff --cached --stat`, and `git diff --stat`; read targeted diffs only when needed. For a title-only request with no usable session context and no uncommitted changes, return `No uncommitted changes to title.`
+- For a description, read the final diff and available PR context, user notes, tests, and captured results. Identify the problem or goal, the resulting behavior, and the cause or design decision when relevant.
 - Describe the final change. Leave out abandoned approaches, authoring history, and file inventories. Include an implementation detail only when it explains the result or a decision the reviewer must assess.
 - Preserve wording the user has approved, including concrete examples. Do not replace it with internal terms. Keep useful links, prerequisites, and required checkboxes; remove material the user has rejected.
 - For performance, cost, or capacity changes, retain the strongest verified before/after measurements, with units, workload, and relevant conditions or limits. Keep a short result even when linking to evidence. Do not replace measured gains with test counts, present targets as results, or generalize beyond the measured scope.
 - Never invent tests, screenshots, outputs, incidents, issue links, or rollout facts. If evidence is thin, make the description thinner. A draft does not authorize publishing or rollout work.
+
+## Write the title
+
+- Write one title of at most 12 words.
+- Lead with a specific action and object. Prefer the main user-visible outcome or dominant change over implementation details. For unrelated edits, title the most important change.
+- Use plain English and remove filler. Avoid vague titles such as "Updates" or "Misc changes".
+- Match obvious repository title style; otherwise use concise title case.
+- Avoid quotes, trailing punctuation, ticket prefixes, and conventional-commit prefixes unless the user asks for them or the repository requires them.
+
+For a title-only request, stop here. Use the following guidance when writing a description.
 
 ## Explain the problem and result
 
@@ -53,4 +72,4 @@ Keep required review-app data separate from the explanation. Preserve the parser
 
 Use multiple examples only when they explain distinct cases. Label them clearly for the reader; no fixed numbering or heading format is required.
 
-Return the PR body unless the user asks for another format. Do not add a separate account of how you wrote it.
+Return only the requested title, description, or clearly separated pair. Do not add a separate account of how you wrote it.

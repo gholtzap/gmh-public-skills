@@ -15,7 +15,7 @@ Recommended companion: install [Ponytail](https://github.com/DietrichGebert/pony
 | Application-wide workflow discovery and conversion | [make-state-machines-explicit](.agents/skills/make-state-machines-explicit/SKILL.md) |
 | Explanations, reports, or updates | [write-clearly](.agents/skills/write-clearly/SKILL.md) |
 | Interface wording | [clean-copy](.agents/skills/clean-copy/SKILL.md), alongside writing guidance |
-| Pull request descriptions | [pr-description](.agents/skills/pr-description/SKILL.md) |
+| Pull request titles and descriptions | [pr-description](.agents/skills/pr-description/SKILL.md) |
 | PR screenshots, videos, or captions | [pr-visual-evidence](.agents/skills/pr-visual-evidence/SKILL.md) |
 
 Reuse existing code and tools. Verify the changed behavior and run project-required checks. Report completed checks and material gaps accurately; local checks, CI, merge, deployment, and live verification are separate results.

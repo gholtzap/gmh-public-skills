@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write PR titles and descriptions"
+  short_description: "Write concise PR titles and clear descriptions"
+  default_prompt: "Use $pr-description to write a title of at most 12 words and a clear PR description from these changes."
