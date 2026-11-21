@@ -10,6 +10,7 @@ Recommended companion: install [Ponytail](https://github.com/DietrichGebert/pony
 | Product UI design or changes | [gmh-ui](.agents/skills/gmh-ui/SKILL.md) |
 | Web UI changes or UI policy review | [lintapple](.agents/skills/lintapple/SKILL.md), alongside UI guidance |
 | Test planning or test-suite pruning | [e2e-first-testing](.agents/skills/e2e-first-testing/SKILL.md) |
+| CI pipelines, test execution speed, caching, or runner costs | [optimize-ci](.agents/skills/optimize-ci/SKILL.md) |
 | Workflow, lifecycle, retries, or cancellation | [design-explicit-state-machines](.agents/skills/design-explicit-state-machines/SKILL.md) |
 | Application-wide workflow discovery and conversion | [make-state-machines-explicit](.agents/skills/make-state-machines-explicit/SKILL.md) |
 | Explanations, reports, or updates | [write-clearly](.agents/skills/write-clearly/SKILL.md) |

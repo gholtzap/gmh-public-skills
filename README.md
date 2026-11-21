@@ -1,6 +1,6 @@
 # GMH public skills
 
-Ten personal engineering skills for design, UI, testing, workflows, writing, and pull requests. See [AGENTS.md](AGENTS.md) for when to use each skill. Cloned third-party skills and plugin bundles are excluded.
+Personal engineering skills for design, UI, testing, CI, workflows, writing, and pull requests. See [AGENTS.md](AGENTS.md) for when to use each skill. Cloned third-party skills and plugin bundles are excluded.
 
 ## Install with an agent
 
@@ -13,7 +13,7 @@ The agent should:
 1. Clone or download this repository to a temporary directory.
 2. Copy the complete folders from `.agents/skills/` into the target project's `.agents/skills/`. Keep references and `agents/openai.yaml` files. Skip identical existing folders; report differing folders instead of overwriting them.
 3. Merge the routing guidance from this repository's `AGENTS.md` into the project's `AGENTS.md`. Preserve existing instructions and avoid duplicate entries. Its relative links work with the layout above.
-4. Confirm that all ten `SKILL.md` files and their local references are present. Report missing tools or unresolved conflicts. Reload the agent session if the new skills are not discovered.
+4. Confirm that every `SKILL.md` file and its local references are present. Report missing tools or unresolved conflicts. Reload the agent session if the new skills are not discovered.
 
 For another agent with a different skill directory, use its supported location and adjust the routing links. Installation does not require changing the application's code or installing every tool mentioned by a skill.
 
