@@ -7,6 +7,10 @@ description: Design, build, or review product UI and dashboards with clear actio
 
 Build the smallest complete user task. Make the UI clear before you style it. Follow a different design direction when the user gives one.
 
+Apply these standards during initial construction and every revision. Default to the smallest complete interface. Add an element only when it serves a concrete user need.
+
+Use the user's approved examples and corrections to guide related screens. Preserve those decisions through redesigns.
+
 ## Exercise design judgment
 
 Identify the user's immediate task, the main content, the next meaningful action, and the state they need to understand. Use these facts to decide what deserves attention.
@@ -65,7 +69,15 @@ Inspect the rendered workflow from entry through its outcome. Review hierarchy, 
 - Check touch controls on mobile. Make their targets large enough and spaced so users can select them without activating nearby controls.
 - Increase text size and browser zoom. Check that text remains readable and controls, labels, and actions remain usable without clipping or overlap.
 
-Make a final subtraction and emphasis pass. Remove unnecessary elements, quiet competing elements, and strengthen anything needed to understand or complete the task. Retain essential labels, feedback, accessibility, and recovery.
+Editorial review is required before completion or publication.
+
+Inspect every affected state in the rendered interface on mobile and desktop, including feedback, results, dialogs, and recovery.
+
+Review each visible element and string. Remove obvious-action narration, repeated labels, completion captions, implementation commentary, unnecessary disclaimers, and decorative metadata. Keep essential instructions, units, consequences, accessibility, and recovery.
+
+Communicate through the interaction, layout, and meaningful values wherever possible. Put optional explanations and provenance behind an appropriate Help or Source control.
+
+Apply the same scrutiny you would use if the user explicitly requested an exhaustive audit of unnecessary UI and copy. Fix the findings within the requested scope before declaring completion. Passing automated checks does not establish editorial or design quality.
 
 Run the project's required UI checks. Treat automated checks as evidence for the properties and states they inspect. Report findings, unmeasured properties, and incomplete coverage accurately.
 
